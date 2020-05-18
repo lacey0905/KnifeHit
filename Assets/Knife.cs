@@ -19,20 +19,20 @@ public class Knife : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(transform.position.y >= 0f)
-        {
-            if (isTrigger)
-            {
-                CTargetController.instance.AddCount();
-                CTargetController.instance.AddKnife(this.gameObject);
-                this.gameObject.tag = "InKnife";
-                rigidbody.velocity = Vector2.zero;
-                transform.position = new Vector3(0f, 0f, 0f);
-                transform.parent = GameObject.Find("KnifeHolder").transform;
-                CTargetController.instance.Shake();
-                isTrigger = false;
-            }
-        }
+        //if(transform.position.y >= 0f)
+        //{
+        //    if (isTrigger)
+        //    {
+        //        CTargetController.instance.AddCount();
+        //        CTargetController.instance.AddKnife(this.gameObject);
+        //        this.gameObject.tag = "InKnife";
+        //        rigidbody.velocity = Vector2.zero;
+        //        transform.position = new Vector3(0f, 0f, 0f);
+        //        transform.parent = GameObject.Find("KnifeHolder").transform;
+        //        CTargetController.instance.Shake();
+        //        isTrigger = false;
+        //    }
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
