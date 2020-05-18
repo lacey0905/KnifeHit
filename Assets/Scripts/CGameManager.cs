@@ -32,14 +32,14 @@ public class CGameManager : MonoBehaviour
     //    SetDirection(direction);
     //}
 
-    private void SetDirection(Direction dir)
-    {
-        if (direction == Direction.Center)
-            target.SetDirection(0f);
-        else if (direction == Direction.Left)
-            target.SetDirection(1f);
-        else if (direction == Direction.Right)
-            target.SetDirection(-1f);
-    }
+    //private void SetDirection(Direction dir)
+    //{
+    //    if (direction == Direction.Center)
+    //        target.SetDirection(0f);
+    //    else if (direction == Direction.Left)
+    //        target.SetDirection(1f);
+    //    else if (direction == Direction.Right)
+    //        target.SetDirection(-1f);
+    //}
 
 }

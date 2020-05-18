@@ -9,39 +9,17 @@ public class CTargetController : MonoBehaviour
     public CHolder holder;
 
     private float direction;
-    public float breakPower;
-
-    Rigidbody2D rigidbody;
 
 
     private void Awake()
     {
-        rigidbody = holder.GetComponent<Rigidbody2D>();
+    
     }
 
     private void FixedUpdate()
     {
-
-
-
-
-
-        //rollingDirection = rollingDirection + Time.deltaTime * rollingSpeed;
-        //holder.Rolling(Mathf.Clamp(rollingSpeed, -maxRollingSpeed, maxRollingSpeed));
+    
     }
-
-    public void RollingBreak()
-    {
-        if(direction > 0)
-        {
-            float newVelocity = rigidbody.angularVelocity - breakPower * direction * Time.deltaTime;
-        }
-
-        
-    }
-
-
-
 
 
     //public void SetRollingDirection(float dir)
