@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Knife
   - InKnife
+  - Target
+  - Holding
   layers:
   - Default
   - TransparentFX

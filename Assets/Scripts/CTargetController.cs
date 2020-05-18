@@ -7,19 +7,31 @@ public class CTargetController : MonoBehaviour
 {
 
     public CHolder holder;
+    Rigidbody2D rigidbody;
 
     private float direction;
 
 
     private void Awake()
     {
-    
+        rigidbody = holder.GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-    
+
     }
+
+    public void SetRollingVelocity(float velocity)
+    {
+        rigidbody.angularVelocity = velocity;
+    }
+
+    public void AddHoldingKnife(Knife knife)
+    {
+        knife.transform.parent = holder.transform;
+    }
+
 
 
     //public void SetRollingDirection(float dir)
