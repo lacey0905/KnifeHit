@@ -6,6 +6,9 @@ public class CKnifeController : MonoBehaviour
 {
 
     public GameObject knife;
+    public float delay;
+    float coolTime = 0f;
+    bool isCool = false;
 
     void Start()
     {
@@ -15,14 +18,25 @@ public class CKnifeController : MonoBehaviour
 
     void Update()
     {
-        
-        if(Input.GetKeyDown(KeyCode.A))
+
+        if(!isCool)
         {
-
-            Instantiate(knife, transform.position, Quaternion.identity);
-
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                Instantiate(knife, transform.position, Quaternion.identity);
+                isCool = true;
+            }
         }
-
+        else
+        {
+            coolTime += Time.deltaTime;
+            if(coolTime >= delay)
+            {
+                isCool = false;
+                coolTime = 0f;
+            }
+        }
+        
 
     }
 }
