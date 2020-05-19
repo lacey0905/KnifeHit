@@ -29,6 +29,11 @@ public class Knife : MonoBehaviour
         return isHolding;
     }
 
+    public void SetDestrory()
+    {
+
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(!isHolding)
