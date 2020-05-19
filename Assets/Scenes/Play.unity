@@ -657,6 +657,7 @@ MonoBehaviour:
   target: {fileID: 1759556224}
   knifePrefab: {fileID: -6533026940194201663, guid: 286f5baede73d1d499239d06be81a41c,
     type: 3}
+  Count: {fileID: 782668301}
 --- !u!4 &1097135385
 Transform:
   m_ObjectHideFlags: 0
